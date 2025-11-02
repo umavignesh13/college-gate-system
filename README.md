@@ -17,9 +17,26 @@ Provide an easy interface for the security team to manage visitor records.
 Maintain accurate and searchable visitor history.
 
 🔹 Project Structure
+```
 college-gate-system/
-├── frontend/   → React.js user interface
-└── backend/    → PHP + MySQL server-side code
+│
+├── frontend/                  → React.js user interface
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── components/
+│   │   │   └── VisitorForm.js
+│   │   └── index.js
+│   ├── public/
+│   │   └── index.html
+│   └── package.json
+│
+└── backend/                   → PHP + MySQL server-side code
+    ├── db.php                 → Database connection
+    ├── add_visitor.php        → Insert visitor details
+    ├── get_visitors.php       → Fetch visitor records
+    └── database.sql           → Database structure (MySQL)
+```
+
 
 
 Frontend: Handles user input, form submission, and displays data in a clean interface.
